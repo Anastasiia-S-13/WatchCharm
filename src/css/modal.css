@@ -34,6 +34,15 @@
     }
 }
 
+.mob-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
 .mob-nav-background {
     margin-left: auto;
     width: 200px;
@@ -76,25 +85,18 @@
         background-size: cover;
 
     }
-}
 
-.mob-container {
-    position: relative;
-    height: 100%;
-    /* padding-top: 310px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
+    .mob-container {
+        padding: 50px;
+    }
 }
 
 .close-mod {
     position: absolute;
     top: 26px;
     right: 32px;
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     background-color: transparent;
     border: none;
 }
@@ -104,8 +106,21 @@
     transition: transform 600ms ease-in-out;
 }
 
-.close-ico:hover {
+.close-mod:hover .close-ico,
+.close-mod:focus .close-ico {
     transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+    .close-mod {
+        width: 40px;
+        height: 40px;
+    }
+
+    .close-mod svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .mobil-menu {
@@ -149,7 +164,8 @@
     transition: opacity 450ms ease;
 }
 
-.mob-item:hover::after {
+.mob-item:hover::after,
+.mob-item:focus::after {
     opacity: 1;
     animation: pulse 1s linear infinite;
 }
@@ -175,12 +191,11 @@
 .mob-soc-box {
     display: flex;
     gap: 10px;
-    margin-bottom: 50px;
 }
 
 .mob-soc-link {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     border: 1px solid rgba(251, 251, 251, 0.1);
     border-radius: 10px;
     padding: 8px;
@@ -189,8 +204,26 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+    .mob-soc-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .mob-soc-link svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 .mob-icon {
     fill: #FBFBFB;
+    opacity: 0.9;
+}
+
+.mob-icon:hover,
+.mob-icon:focus {
+    opacity: 1;
 }
 
 /* ===animation for icon=== */
@@ -217,7 +250,8 @@
         transition-property: transform opacity;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: translateY(-5px);
 
         &:before {
