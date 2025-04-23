@@ -1,8 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
     <defs>
-        <symbol id="icon-menu" viewBox="0 0 29 32">
-            <path fill="none" stroke="#173a56" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.097" d="M3.613 16H25.29M3.613 8H25.29M3.613 24H25.29" style="stroke:var(--color1, #173a56)"/>
-        </symbol>
         <symbol id="icon-YouTube" viewBox="0 0 34 32">
             <path d="M25.04 6c-1.36-.08-4.16-.16-8.4-.16h-.56c-4.08 0-6.8.08-8.16.24-1.84.16-3.12.64-3.84 1.28-.64.56-1.12 1.6-1.28 2.96-.08.88-.16 2.72-.16 5.52v.4c0 2.64.08 4.48.24 5.36.24 1.28.64 2.24 1.44 2.8.8.64 2.16 1.04 4.08 1.2 1.36.08 4.16.16 8.4.16h.56c4.08 0 6.8-.08 8.16-.24 1.84-.16 3.12-.64 3.84-1.28.64-.56 1.12-1.6 1.28-2.96.08-.88.16-2.72.16-5.52v-.4c0-2.64-.08-4.48-.24-5.36-.24-1.28-.64-2.24-1.44-2.8-.8-.64-2.16-1.04-4.08-1.2zm-3.12 9.84-8.8 5.28V10.56l8.8 5.28z"/>
         </symbol>
@@ -13,7 +10,7 @@
         <symbol id="icon-Facebook" viewBox="0 0 34 32">
             <path d="M20.32 4.64h.96v3.6h-1.2c-.48 0-.96 0-1.2.24s-.24.48-.24 1.04v1.28h2.64v3.04h-2.64v13.2h-4.08V13.76H12.4v-3.04h2.16V9.68c0-1.76.24-3.04.72-3.6.72-1.04 2.16-1.52 4.32-1.52.24.08.48.08.72.08z"/>
         </symbol>
-        <symbol id="icon-menu1" viewBox="0 0 32 32">
+        <symbol id="icon-menu" viewBox="0 0 32 32">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M4 11.333h24M4 20.667h24"/>
         </symbol>
         <symbol id="icon-xxx" viewBox="0 0 32 32">
