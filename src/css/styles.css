@@ -12,8 +12,8 @@
 /* Sections style */
 @import url('./header.css');
 /* Hero */
-/* About us */
-/* Catalog */
+@import url('./about-us.css');
+@import url('./catalog.css');
 @import url('./advertisement.css');
 /* Sale */
 /* Reviews */

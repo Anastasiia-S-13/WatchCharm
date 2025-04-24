@@ -1,0 +1,163 @@
+
+.catalog-title{
+    font-weight: 600;
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #0c0c0c;
+        margin-bottom: 24px;
+}
+.catalog-list{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* height: 1516px; */
+        width: 100%;
+        
+}
+.catalog-item{
+    height: 364px;
+    width: 100%;
+    /* max-width: 335px; */
+    border: 1px solid rgba(12, 12, 12, 0.05);
+        border-radius: 30px;
+        background-color: #f3f3f3;
+        padding: 24px 28px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+}
+.catalog-card{
+    width: 100%;
+}
+.image-box{
+    width: 100%;
+        max-width: 279px;
+    height: 262px;
+    padding: 18px 36px 18px 35px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+.card-watch{
+width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.card-subtitle{
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 8px;
+}
+.card-descrpt{
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.5);
+}
+.catalog-btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.show-btn{
+    border-radius: 16px;
+    border: none;
+        width: 160px;
+        height: 48px;
+        background-color: #3350e9;
+        font-weight: 500;
+            font-size: 14px;
+            line-height: 1.28571;
+            text-align: center;
+            color: #fbfbfb;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+}
+.show-btn:hover {
+    background-color: #2a43c9;
+}
+
+@media screen and (min-width: 768px) {
+    .catalog-title {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+        .catalog-list {
+            display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: row;
+                gap: 16px;
+                margin-bottom: 16px;
+        }
+    .catalog-item {
+            width: 344px;
+            height: 414px;
+            padding-left: 32px;
+            padding-right: 32px;
+    }
+        .image-box {
+            width: 280px;
+            height: 312px;
+            padding: 10px 6px;
+        }
+
+    .card-subtitle {
+        font-size: 20px;
+        line-height: 1;
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+    }
+    .card-watch {
+        width: 268px;
+        height: 292px;
+    }
+    .hidden{
+        display: block;
+    }
+    .no-open{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .catalog-list {
+        width: 1150px;
+        height: 860px;
+        gap: 23px;
+    }
+    .catalog-item {
+        width: 368px;
+        height: 414px;
+        margin-bottom: 9px;
+    }
+    .catalog-card{
+        width: 304px;
+            height: 366px;
+    }
+    .image-box {
+        width: 304px;
+        height: 312px;
+        padding: 6px 6px 14px 6px;
+    }
+    .card-watch {
+        width: 292px;
+        height: 292px;
+    }
+    
+}
