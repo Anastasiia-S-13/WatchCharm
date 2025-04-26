@@ -9,7 +9,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
   <script type="module" crossorigin src="/WatchCharm/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/WatchCharm/assets/index-CuUC1VYf.css">
+  <link rel="stylesheet" crossorigin href="/WatchCharm/assets/index-Z0LwD6-C.css">
 </head>
 
 <body>
@@ -410,7 +410,7 @@
   </div>
 </section>
 
-    <section class="contact-us" id="contact-us">
+    <section class="contact-us" id="contact">
   <div class="container">
     <h2 class="section-title title">Contact-us</h2>
     <div class="contact-us-box">
@@ -421,28 +421,68 @@
         </p>
         <form class="form-contact-us">
           <label class="form-label" for="user-name"></label>
-          <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Name" required />
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+          />
           <label class="form-label" for="email"></label>
-          <input class="form-input" name="email" id="email" placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+          <input
+            class="form-input"
+            name="email"
+            id="email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
           <label class="form-label" for="phone"></label>
-          <input class="form-input" type="tel" name="phone" id="phone" placeholder="+380"
-            pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$" required />
+          <input
+            class="form-input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+380"
+            pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
+            required
+          />
           <label class="form-label" for="user-comment"></label>
-          <textarea class="form-input textarea" name="user-comment" rows="3" id="user-comment" placeholder="Comment"
-            required></textarea>
+          <textarea
+            class="form-input textarea"
+            name="user-comment"
+            rows="3"
+            id="user-comment"
+            placeholder="Comment"
+            required
+          ></textarea>
           <button class="form-btn button-animation" type="submit">Send</button>
         </form>
       </div>
       <picture>
-        <source media="(min-width:1280px)" srcset="/WatchCharm/assets/contact-us-desktop-CQxLZhZ4.jpg 1x, /WatchCharm/assets/contact-us-desktop@2x-B98KDOs1.jpg 2x" />
-        <source media="(min-width:768px)" srcset="/WatchCharm/assets/contact-us-tablet-L2QVDd-7.jpg 1x, /WatchCharm/assets/contact-us-tablet@2x-BtQMUmCw.jpg 2x" />
-        <source media="(max-width:767px)" srcset="/WatchCharm/assets/contact-us-mobile-AgyRUpNf.jpg 1x, /WatchCharm/assets/contact-us-mobile@2x-D3VvXHsW.jpg 2x" />
-        <img class="contact-us-img" src="/WatchCharm/assets/contact-us-mobile-AgyRUpNf.jpg" alt="Watch" />
+        <source
+          media="(min-width:1280px)"
+          srcset="/WatchCharm/assets/contact-us-desktop-CQxLZhZ4.jpg 1x, /WatchCharm/assets/contact-us-desktop@2x-B98KDOs1.jpg 2x"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/WatchCharm/assets/contact-us-tablet-L2QVDd-7.jpg 1x, /WatchCharm/assets/contact-us-tablet@2x-BtQMUmCw.jpg 2x"
+        />
+        <source
+          media="(max-width:767px)"
+          srcset="/WatchCharm/assets/contact-us-mobile-AgyRUpNf.jpg 1x, /WatchCharm/assets/contact-us-mobile@2x-D3VvXHsW.jpg 2x"
+        />
+        <img
+          class="contact-us-img"
+          src="/WatchCharm/assets/contact-us-mobile-AgyRUpNf.jpg"
+          alt="Watch"
+        />
       </picture>
     </div>
   </div>
 </section>
+
   </main>
 
   <footer class="page-footer">
@@ -493,7 +533,7 @@
           craftsmanship meets impeccable design
         </p>
       </div>
-      <div class="footer-nav-wrap">
+      <nav aria-label="footer-navigation" class="footer-nav-wrap">
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
             <a class="footer-nav-link" href="#hero">Home</a>
@@ -511,13 +551,13 @@
             <a class="footer-nav-link" href="#reviews">Reviews</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="contact">Contact Us</a>
+            <a class="footer-nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
         <p class="footer-address-text">
           1678 S. Pioneer Road Salt Lake City UT 84104
         </p>
-      </div>
+      </nav>
       <div class="copyright-wrap">
         <p class="copyright-text">
           &#169;2023 The Watch Spot. All rights reserved.
