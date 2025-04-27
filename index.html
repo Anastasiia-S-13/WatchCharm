@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/WatchCharm/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchCharm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <script type="module" crossorigin src="/WatchCharm/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/WatchCharm/assets/index-CjSUjxIk.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/WatchCharm/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WatchCharm</title>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
-  <script type="module" crossorigin src="/WatchCharm/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/WatchCharm/assets/index-BaSL8YiG.css">
-</head>
-
-<body>
-  <header class="header" id="header">
+  <body>
+    <header class="header" id="header">
   <div class="container head-container">
     <div class="mob-head">
       <div class="logo-box">
@@ -88,9 +89,8 @@
 </header>
 
 
-
-  <main>
-    <section class="hero" id="hero">
+    <main>
+      <section class="hero" id="hero">
     <div class="container ">
         <div class="hero-container">
             <div class="">
@@ -133,7 +133,7 @@
         </picture>
     </div>
 </section>
-    <section id="about" class="about-us">
+      <section id="about" class="about-us">
     <div class="container">
         <div class="about-us-container">
             <div class="about-us-box">
@@ -162,7 +162,7 @@
         </div>
     </div>
 </section>
-    <section id="catalog">
+      <section id="catalog">
   <div class="container catalog-container">
     <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-list">
@@ -257,7 +257,7 @@
     </div>
   </div>
 </section>
-    <section class="advertisement">
+      <section class="advertisement">
   <div class="container">
     <h2 class="section-title visually-hidden">Advertisement</h2>
     <div class="reclame-wrap">
@@ -269,7 +269,7 @@
     </div>
   </div>
 </section>
-    <section class="sale" id="sale">
+      <section class="sale" id="sale">
     <div class="container">
         <h2 class="section-title sale-title">Sale</h2>
         <div class="sale-all-box">
@@ -322,7 +322,7 @@
         </div>
     </div>
 </section>
-    <section class="reviews" id="reviews">
+      <section class="reviews" id="reviews">
   <div class="container">
     <h2 class="section-title reviews-title">Reviews</h2>
     <ul class="reviews-list">
@@ -378,7 +378,7 @@
   </div>
 </section>
 
-    <section class="contact-us" id="contact">
+      <section class="contact-us" id="contact">
   <div class="container">
     <h2 class="section-title title">Contact-us</h2>
     <div class="contact-us-box">
@@ -388,7 +388,7 @@
           phone, and message and we'll get back to you shortly.
         </p>
         <form class="form-contact-us">
-          <label class="form-label" for="user-name"></label>
+          <label class="form-label visually-hidden" for="user-name">Name</label>
           <input
             class="form-input"
             type="text"
@@ -397,7 +397,7 @@
             placeholder="Name"
             required
           />
-          <label class="form-label" for="email"></label>
+          <label class="form-label visually-hidden" for="email">Email</label>
           <input
             class="form-input"
             name="email"
@@ -406,7 +406,7 @@
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             required
           />
-          <label class="form-label" for="phone"></label>
+          <label class="form-label visually-hidden" for="phone">Phone</label>
           <input
             class="form-input"
             type="tel"
@@ -416,7 +416,9 @@
             pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
             required
           />
-          <label class="form-label" for="user-comment"></label>
+          <label class="form-label visually-hidden" for="user-comment"
+            >Comment</label
+          >
           <textarea
             class="form-input textarea"
             name="user-comment"
@@ -451,9 +453,9 @@
   </div>
 </section>
 
-  </main>
+    </main>
 
-  <footer class="page-footer" id="footer">
+    <footer class="page-footer" id="footer">
   <div class="container">
     <div class="footer-wrap">
       <div class="footer-content">
@@ -539,7 +541,7 @@
   </div>
 </footer>
 
-  <div class="mob-nav" data-modal-mobnav>
+    <div class="mob-nav" data-modal-mobnav>
   <div class="mob-nav-background">
     <div class="mob-container">
       <button
@@ -602,7 +604,6 @@
 </div>
 
 
-
-</body>
-
+    <script type="input-phone" src="./js/contact-us.js"></script>
+  </body>
 </html>
