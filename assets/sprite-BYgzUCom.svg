@@ -10,8 +10,8 @@
         <symbol id="icon-Facebook" viewBox="0 0 34 32">
             <path d="M20.32 4.64h.96v3.6h-1.2c-.48 0-.96 0-1.2.24s-.24.48-.24 1.04v1.28h2.64v3.04h-2.64v13.2h-4.08V13.76H12.4v-3.04h2.16V9.68c0-1.76.24-3.04.72-3.6.72-1.04 2.16-1.52 4.32-1.52.24.08.48.08.72.08z"/>
         </symbol>
-        <symbol id="icon-menu" viewBox="0 0 32 32">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M4 11.333h24M4 20.667h24"/>
+        <symbol id="icon-menu"  viewBox="0 0 68 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6" d="M4 4.333h60M4 27.667h60"></path>
         </symbol>
         <symbol id="icon-xxx" viewBox="0 0 32 32">
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.3529" stroke="currentColor"  d="M24 8l-16 16"></path>
