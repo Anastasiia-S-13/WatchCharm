@@ -1,7 +1,10 @@
 /* ===header=== */
 
 .header {
-    padding: 26px 0;
+    height: 74px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+
 }
 
 .nav-container {
@@ -27,6 +30,7 @@
     width: 34px;
     height: 34px;
     border: none;
+    padding: 0;
 }
 
 .kanapka {
@@ -41,6 +45,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        height: 92px;
+        padding: 26px 0;
+    }
+
     .logo-head {
         font-size: 20px;
     }
@@ -57,6 +66,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .header {
+        height: 88px;
+    }
+
     .mob-head {
         display: none;
     }
@@ -92,7 +105,7 @@
 
     /* ===animation for links=== */
 
-    .top-nav-item::after {
+    .top-nav-item a::after {
         content: '';
         position: absolute;
         left: 50%;
@@ -107,8 +120,12 @@
         transition: opacity 450ms ease;
     }
 
-    .top-nav-item:hover::after,
-    .top-nav-item:focus::after {
+    .top-nav-item a:hover::after {
+        opacity: 1;
+        animation: pulse 1s linear infinite;
+    }
+
+    .top-nav-item a:focus::after {
         opacity: 1;
         animation: pulse 1s linear infinite;
     }
@@ -182,7 +199,7 @@
                 rgba(91, 93, 95, 0.033) 70%);
         border-radius: 90%;
         transition-duration: .3S;
-        transition-property: transform opacity;
+        transition-property: transform, opacity;
     }
 
 

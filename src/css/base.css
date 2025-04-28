@@ -86,41 +86,15 @@ section {
   padding: 30px 0;
 }
 
-header {
-  padding-bottom: 30px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
 @media only screen and (min-width: 768px) {
   section {
     padding: 40px 0;
-  }
-
-  header {
-    padding-bottom: 40px;
-  }
-
-  footer {
-    padding-top: 40px;
-    padding-bottom: 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   section {
     padding: 50px 0;
-  }
-
-  header {
-    padding-bottom: 50px;
-  }
-
-  footer {
-    padding-top: 50px;
   }
 }
 
