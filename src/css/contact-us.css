@@ -11,7 +11,7 @@
 .input-box {
   border-radius: 30px;
   padding: 48px 28px;
-  width: 335px;
+  width: 100%;
   background-color: #f3f3f3;
 }
 
@@ -20,7 +20,10 @@
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 14px;
+
+
   line-height: 1.29;
+
   color: rgba(12, 12, 12, 0.7);
 }
 
@@ -43,7 +46,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   font-size: 14px;
-  line-height: 1.29;
+
   background-color: #f3f3f3;
 }
 
@@ -59,6 +62,7 @@
 
 .textarea {
   resize: none;
+  height: 84px;
 }
 
 .form-btn {
@@ -105,18 +109,25 @@
   .contact-us-text {
     margin-bottom: 32px;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 1.22;
   }
 
   .form-contact-us>*:nth-child(8) {
     margin-bottom: 32px;
+
   }
 
   .form-input {
     padding: 16px 16px 16px 18px;
     font-size: 16px;
-    line-height: 1.25;
+
     background: transparent;
+  }
+
+  .textarea {
+    height: 90px;
+    box-sizing: border-box;
+
   }
 
   .form-btn {
@@ -134,6 +145,10 @@
   .contact-us-box {
     flex-direction: row;
     row-gap: 40px;
+  }
+
+  .contact-us-text {
+    line-height: 1;
   }
 
   .input-box {

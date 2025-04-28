@@ -15,10 +15,8 @@
 .reviews-list-item {
   border-radius: 30px;
   padding: 32px 36px;
-  width: 335px;
-  height: 262px;
   background: #f3f3f3;
-  padding: 32px 36px;
+  transition: box-shadow 0.3s ease;
 }
 
 .reviews-foto {
@@ -54,7 +52,6 @@
 .reviews-list-item:hover,
 .reviews-list-item:focus {
   box-shadow: 0 4px 5px rgba(25, 25, 25, 0.3);
-  transition: box-shadow 0.3s ease;
 }
 
 /* --------------Media-Reviews---------------- */
@@ -66,7 +63,6 @@
 
   .reviews-list-item {
     width: 344px;
-    height: 272px;
   }
 
   .content-reviews-title {

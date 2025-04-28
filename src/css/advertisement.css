@@ -1,18 +1,5 @@
 /* gap between sections */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.adver-wrap {
+.reclame-wrap {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -26,21 +13,21 @@
 }
 
 @media (min-resolution: 2x) {
-  .adver-wrap {
+  .reclame-wrap {
     background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
       url(/img/adver-img/adver-bg-mobile.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .adver-wrap {
+  .reclame-wrap {
     padding: 80px 64px;
     gap: 32px;
     background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
       url(/img/adver-img/adver-bg-tablet-min.jpg);
   }
   @media (min-resolution: 2x) {
-    .adver-wrap {
+    .reclame-wrap {
       background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
         url(/img/adver-img/adver-bg-tablet.jpg);
     }
@@ -48,7 +35,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .adver-wrap {
+  .reclame-wrap {
     flex-direction: row;
     gap: 140px;
     padding: 83px 80px;
@@ -56,26 +43,26 @@
       url(/img/adver-img/adver-bg-desc-min.jpg);
   }
   @media (min-resolution: 2x) {
-    .adver-wrap {
+    .reclame-wrap {
       background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
         url(/img/adver-img/adver-bg-desc.jpg);
     }
   }
 }
 
-.adver-text {
+.reclame-text {
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
 }
-.adver-text-uniq {
+.reclame-text-uniq {
   color: rgba(251, 251, 251, 0.5);
 }
 
 @media screen and (min-width: 768px) {
-  .adver-text {
+  .reclame-text {
     font-size: 48px;
     line-height: 0.92;
   }

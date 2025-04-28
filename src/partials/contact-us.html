@@ -8,7 +8,7 @@
           phone, and message and we'll get back to you shortly.
         </p>
         <form class="form-contact-us">
-          <label class="form-label" for="user-name"></label>
+          <label class="form-label visually-hidden" for="user-name">Name</label>
           <input
             class="form-input"
             type="text"
@@ -17,16 +17,16 @@
             placeholder="Name"
             required
           />
-          <label class="form-label" for="email"></label>
+          <label class="form-label visually-hidden" for="email">Email</label>
           <input
             class="form-input"
             name="email"
             id="email"
             placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
             required
           />
-          <label class="form-label" for="phone"></label>
+          <label class="form-label visually-hidden" for="phone">Phone</label>
           <input
             class="form-input"
             type="tel"
@@ -36,11 +36,13 @@
             pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
             required
           />
-          <label class="form-label" for="user-comment"></label>
+          <label class="form-label visually-hidden" for="user-comment"
+            >Comment</label
+          >
           <textarea
             class="form-input textarea"
             name="user-comment"
-            rows="3"
+            rows="5"
             id="user-comment"
             placeholder="Comment"
             required

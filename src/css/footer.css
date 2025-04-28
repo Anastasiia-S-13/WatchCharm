@@ -68,7 +68,7 @@
     );
     border-radius: 90%;
     transition-duration: 0.3s;
-    transition-property: transform opacity;
+    transition-property: transform, opacity;
   }
 
   &:hover,
@@ -82,7 +82,7 @@
   }
 }
 
-.footer-contact-wrap {
+.footer-contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,6 @@
   border-radius: 16px;
   width: 152px;
   height: 44px;
-  margin-bottom: 40px;
   position: relative;
   transition-duration: 0.3s;
   transition-property: transform;
@@ -130,6 +129,10 @@
   }
 }
 
+.logo-phone-wrap {
+  margin-bottom: 40px;
+}
+
 .footer-text {
   font-weight: 600;
   font-size: 20px;
@@ -138,7 +141,7 @@
   text-align: center;
 }
 
-.footer-nav-wrap {
+.footer-nav-address-wrap {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
@@ -148,7 +151,7 @@
   position: relative;
 }
 
-.footer-nav-wrap::after {
+.footer-nav-address-wrap::after {
   content: '';
   position: absolute;
   left: 0;
@@ -256,13 +259,13 @@
     margin: 0 auto;
   }
 
-  .footer-nav-wrap {
+  .footer-nav-address-wrap {
     font-size: 14px;
     line-height: 1.29;
     margin-bottom: 56px;
   }
 
-  .footer-nav-wrap::after {
+  .footer-nav-address-wrap::after {
     bottom: -28px;
   }
 
@@ -273,7 +276,50 @@
 
   .footer-nav-item {
     padding-bottom: 18px;
+    position: relative;
   }
+
+    .footer-nav-item:hover,
+    .footer-nav-item:focus {
+      transform: scale(1);
+    }
+
+    .footer-nav-item::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -1px;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #FBFBFB;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 450ms ease;
+    }
+  
+    .footer-nav-item:hover::after,
+    .footer-nav-item:focus::after {
+      opacity: 1;
+      animation: pulse 1s linear infinite;
+    }
+  
+    @keyframes pulse {
+  
+      0%,
+      100% {
+        transform: translateX(-50%) scale(1);
+      }
+  
+      25% {
+        transform: translateX(-50%) scale(1.1);
+      }
+  
+      75% {
+        transform: translateX(-50%) scale(0.9);
+      }
+    }
 
   .footer-address-text {
     max-width: 162px;
@@ -293,6 +339,10 @@
     padding: 50px 0 32px;
   }
 
+  .page-footer .container {
+    padding: 0 32px;
+  }
+
   .footer-content {
     margin-bottom: 126px;
   }
@@ -305,6 +355,7 @@
 
   .logo-phone-wrap {
     display: contents;
+    justify-content: space-between;
   }
 
   .footer-soc-wrap {
@@ -321,10 +372,6 @@
 
   .footer-text {
     margin: 0;
-  }
-
-  .logo-phone-wrap {
-    justify-content: space-between;
   }
 
   .footer-nav-list {
