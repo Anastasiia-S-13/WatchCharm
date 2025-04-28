@@ -20,7 +20,7 @@
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.28571;
   color: rgba(12, 12, 12, 0.7);
 }
 
@@ -43,7 +43,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   font-size: 14px;
-  line-height: 1.25;
+
   background-color: #f3f3f3;
 }
 
@@ -106,18 +106,25 @@
   .contact-us-text {
     margin-bottom: 32px;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 1.22;
   }
 
   .form-contact-us>*:nth-child(8) {
     margin-bottom: 32px;
+
   }
 
   .form-input {
     padding: 16px 16px 16px 18px;
     font-size: 16px;
-    line-height: 1.25;
+
     background: transparent;
+  }
+
+  .textarea {
+    height: 90px;
+    box-sizing: border-box;
+
   }
 
   .form-btn {
@@ -135,6 +142,10 @@
   .contact-us-box {
     flex-direction: row;
     row-gap: 40px;
+  }
+
+  .contact-us-text {
+    line-height: 1;
   }
 
   .input-box {

@@ -23,7 +23,7 @@
             name="email"
             id="email"
             placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
             required
           />
           <label class="form-label visually-hidden" for="phone">Phone</label>
@@ -42,7 +42,7 @@
           <textarea
             class="form-input textarea"
             name="user-comment"
-            rows="3"
+            rows="5"
             id="user-comment"
             placeholder="Comment"
             required
