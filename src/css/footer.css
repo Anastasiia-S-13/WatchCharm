@@ -68,7 +68,7 @@
     );
     border-radius: 90%;
     transition-duration: 0.3s;
-    transition-property: transform opacity;
+    transition-property: transform, opacity;
   }
 
   &:hover,
