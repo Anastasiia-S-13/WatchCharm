@@ -41,6 +41,19 @@ main {
   flex-grow: 1;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section-title {
   font-weight: 600;
   font-size: 32px;
@@ -68,3 +81,61 @@ main {
     line-height: 1.25;
   }
 }
+
+section {
+  padding: 30px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+.button-animation,
+.contact-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-animation:hover,
+.button-animation:focus {
+  background-color: #1f3cd4;
+  transform: scale(1.1);
+}
+
+.contact-button:hover,
+.contact-button:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
+  transform: scale(1.1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ====scroll updata==== */
+html,
+body {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ====scroll updata==== */
