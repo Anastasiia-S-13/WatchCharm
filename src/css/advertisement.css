@@ -1,0 +1,90 @@
+/* gap between sections */
+.reclame-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  box-sizing: content-box;
+  padding: 60px 28px;
+  border-radius: 30px;
+  background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
+    url(/img/adver-img/adver-bg-mobile-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) {
+  .reclame-wrap {
+    background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
+      url(/img/adver-img/adver-bg-mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reclame-wrap {
+    padding: 80px 64px;
+    gap: 32px;
+    background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
+      url(/img/adver-img/adver-bg-tablet-min.jpg);
+  }
+  @media (min-resolution: 2x) {
+    .reclame-wrap {
+      background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
+        url(/img/adver-img/adver-bg-tablet.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reclame-wrap {
+    flex-direction: row;
+    gap: 140px;
+    padding: 83px 80px;
+    background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
+      url(/img/adver-img/adver-bg-desc-min.jpg);
+  }
+  @media (min-resolution: 2x) {
+    .reclame-wrap {
+      background: linear-gradient(rgb(12, 12, 12, 0.8), rgb(12, 12, 12, 0.8)),
+        url(/img/adver-img/adver-bg-desc.jpg);
+    }
+  }
+}
+
+.reclame-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+.reclame-text-uniq {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .reclame-text {
+    font-size: 48px;
+    line-height: 0.92;
+  }
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  width: 160px;
+  height: 48px;
+  border: 1px solid rgba(251, 251, 251, 0.5);
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-button {
+    min-width: 160px;
+  }
+}
